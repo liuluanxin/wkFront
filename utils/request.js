@@ -9,10 +9,9 @@ export const request = (options) => {  // {url: '', method: '', data: {}}
 			data: options.data || {},
 			success: (res) => {
 				const data = res.data
-				console.log("data",data)
 				if (data.code === '401') {  // 401表示无权限
 					uni.navigateTo({
-						url: '/pages/login/login' 
+						url: '/pages/login/login'
 					})
 					return
 				} else if(data.code !== '200') {

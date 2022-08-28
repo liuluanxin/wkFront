@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/register/register"],{
 
 /***/ 27:
-/*!*****************************************************************************!*\
-  !*** D:/HBuilderProjects/wk/main.js?{"page":"pages%2Fregister%2Fregister"} ***!
-  \*****************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/workTime/wkFront/main.js?{"page":"pages%2Fregister%2Fregister"} ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17,9 +17,9 @@ createPage(_register.default);
 /***/ }),
 
 /***/ 28:
-/*!**********************************************************!*\
-  !*** D:/HBuilderProjects/wk/pages/register/register.vue ***!
-  \**********************************************************/
+/*!*******************************************************!*\
+  !*** D:/workTime/wkFront/pages/register/register.vue ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -56,9 +56,9 @@ component.options.__file = "pages/register/register.vue"
 /***/ }),
 
 /***/ 29:
-/*!*****************************************************************************************!*\
-  !*** D:/HBuilderProjects/wk/pages/register/register.vue?vue&type=template&id=891c2434& ***!
-  \*****************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/workTime/wkFront/pages/register/register.vue?vue&type=template&id=891c2434& ***!
+  \**************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -78,9 +78,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 30:
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/HBuilderProjects/wk/pages/register/register.vue?vue&type=template&id=891c2434& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/workTime/wkFront/pages/register/register.vue?vue&type=template&id=891c2434& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -134,9 +134,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 31:
-/*!***********************************************************************************!*\
-  !*** D:/HBuilderProjects/wk/pages/register/register.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************/
+/*!********************************************************************************!*\
+  !*** D:/workTime/wkFront/pages/register/register.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -150,9 +150,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 32:
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/HBuilderProjects/wk/pages/register/register.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/workTime/wkFront/pages/register/register.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -176,58 +176,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
     return {
-      form: { username: '', password: '' },
-      rules: {
-        username: {
-          rules: [{ required: true, errorMessage: '请输入用户名' }],
-          validateTrigger: 'submit' },
-
-        password: {
-          rules: [{ required: true, errorMessage: '请输入密码' }],
-          validateTrigger: 'submit' },
-
-        confirm: {
-          rules: [{ required: true, errorMessage: '请确认密码' }],
-          validateTrigger: 'submit' } } };
-
-
+      form: { userName: '', passWord: '' } };
 
   },
   methods: {
-    register: function register() {var _this = this;
-      this.$refs.form.validate().then(function (res) {
-        if (_this.form.password !== _this.form.confirm) {
-          uni.showToast({
-            icon: "none",
-            title: '两次密码输入不一致' });
-
-          return;
-        }
-        _this.request({ url: '/user/register', method: 'POST', data: _this.form }).then(function (res) {
-          if (res.code === '200') {
-            // 跳转页面
-            uni.navigateTo({
-              url: '/pages/login/login' });
-
-            uni.showToast({
-              title: '注册成功' });
-
-          }
-        });
-      }).catch(function (err) {
-        console.log('表单错误信息：', err);
+    register: function register() {
+      console.log(this.form);
+      var BASE_URL = 'http://localhost:8080';
+      uni.request({
+        url: BASE_URL + '/user/register',
+        method: 'POST',
+        data: this.form }).
+      then(function (res) {
+        console(res);
       });
-
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

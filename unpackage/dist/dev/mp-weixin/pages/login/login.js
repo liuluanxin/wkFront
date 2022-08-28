@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/login/login"],{
 
 /***/ 21:
-/*!***********************************************************************!*\
-  !*** D:/HBuilderProjects/wk/main.js?{"page":"pages%2Flogin%2Flogin"} ***!
-  \***********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/workTime/wkFront/main.js?{"page":"pages%2Flogin%2Flogin"} ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17,9 +17,9 @@ createPage(_login.default);
 /***/ }),
 
 /***/ 22:
-/*!****************************************************!*\
-  !*** D:/HBuilderProjects/wk/pages/login/login.vue ***!
-  \****************************************************/
+/*!*************************************************!*\
+  !*** D:/workTime/wkFront/pages/login/login.vue ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -56,9 +56,9 @@ component.options.__file = "pages/login/login.vue"
 /***/ }),
 
 /***/ 23:
-/*!***********************************************************************************!*\
-  !*** D:/HBuilderProjects/wk/pages/login/login.vue?vue&type=template&id=b237504c& ***!
-  \***********************************************************************************/
+/*!********************************************************************************!*\
+  !*** D:/workTime/wkFront/pages/login/login.vue?vue&type=template&id=b237504c& ***!
+  \********************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -78,9 +78,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 24:
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/HBuilderProjects/wk/pages/login/login.vue?vue&type=template&id=b237504c& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/workTime/wkFront/pages/login/login.vue?vue&type=template&id=b237504c& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -134,9 +134,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 25:
-/*!*****************************************************************************!*\
-  !*** D:/HBuilderProjects/wk/pages/login/login.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/workTime/wkFront/pages/login/login.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -150,9 +150,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 26:
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/HBuilderProjects/wk/pages/login/login.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/workTime/wkFront/pages/login/login.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -176,20 +176,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 var _default =
 {
   data: function data() {
     return {
-      form: { username: 'admin', password: 'admin' },
+      form: { userName: 'admin', passWord: 'admin' },
       rules: {
-        username: {
+        userName: {
           rules: [{ required: true, errorMessage: '请输入用户名' }],
           validateTrigger: 'submit' },
 
-        password: {
+        passWord: {
           rules: [{ required: true, errorMessage: '请输入密码' }],
           validateTrigger: 'submit' } } };
 
@@ -198,10 +195,12 @@ var _default =
   },
   methods: {
     login: function login() {var _this = this;
-      this.$refs.form.validate().then(function (res) {
+      this.$refs.form.
+      validate().
+      then(function (res) {
         _this.request({ url: '/user/login', method: 'POST', data: _this.form }).then(function (res) {
-          console.log(res.code);
-          if (res.code === '200') {
+          console.log(res);
+          if (res !== '') {
             // 跳转页面
             uni.navigateTo({
               url: '/pages/index/index' });
@@ -213,10 +212,10 @@ var _default =
             uni.setStorageSync('user', res.data);
           }
         });
-      }).catch(function (err) {
+      }).
+      catch(function (err) {
         console.log('表单错误信息：', err);
       });
-
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
