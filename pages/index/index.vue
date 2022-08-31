@@ -4,6 +4,7 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
+		<view prefixIcon="plus">1</view>
 	</view>
 </template>
 

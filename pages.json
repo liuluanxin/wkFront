@@ -17,6 +17,18 @@
 			"style": {
 				"navigationBarTitleText": "注册"
 			}
+		}, 
+		{
+			"path": "pages/worktime/worktime",
+			"style": {
+				"navigationBarTitleText": "申请"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
 		}
 	],
 	"globalStyle": {
@@ -25,5 +37,30 @@
 		"navigationBarBackgroundColor": "#4169E1",
 		"backgroundColor": "#F8F8F8",
 		"enablePullDownRefresh": true
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#333",
+		"color": "#8F8F94",
+		"selectedColor": "#f33e54",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/img/tabbar/home.png",
+				"selectedIconPath": "static/img/tabbar/homeactive.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/worktime/worktime",
+				"iconPath": "static/img/tabbar/add.png",
+				"selectedIconPath": "static/img/tabbar/addactive.png",
+				"text": "申请"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/img/tabbar/me.png",
+				"selectedIconPath": "static/img/tabbar/meactive.png",
+				"text": "我"
+			}
+		]
 	}
 }
