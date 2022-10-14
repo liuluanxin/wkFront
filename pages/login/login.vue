@@ -42,10 +42,8 @@ export default {
 						method: 'POST',
 						data: this.form,
 						success: res => {
+							console.log('1222', res);
 							if (res.data !== '') {
-							console.log('res', uni.navigateTo({
-									url: '/pages/index/index'
-								}));
 								// 跳转页面
 								uni.redirectTo({
 									url: '/pages/index/index'

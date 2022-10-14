@@ -1,6 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["uni_modules/uni-forms/components/uni-forms/uni-forms"],{
 
-/***/ 49:
+/***/ 62:
 /*!************************************************************************************!*\
   !*** H:/workTime/wkFront/uni_modules/uni-forms/components/uni-forms/uni-forms.vue ***!
   \************************************************************************************/
@@ -9,10 +9,10 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _uni_forms_vue_vue_type_template_id_7ae0e404___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./uni-forms.vue?vue&type=template&id=7ae0e404& */ 50);
-/* harmony import */ var _uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./uni-forms.vue?vue&type=script&lang=js& */ 52);
+/* harmony import */ var _uni_forms_vue_vue_type_template_id_7ae0e404___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./uni-forms.vue?vue&type=template&id=7ae0e404& */ 63);
+/* harmony import */ var _uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./uni-forms.vue?vue&type=script&lang=js& */ 65);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _uni_forms_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./uni-forms.vue?vue&type=style&index=0&lang=scss& */ 58);
+/* harmony import */ var _uni_forms_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./uni-forms.vue?vue&type=style&index=0&lang=scss& */ 72);
 /* harmony import */ var _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 11);
 
 var renderjs
@@ -41,7 +41,7 @@ component.options.__file = "uni_modules/uni-forms/components/uni-forms/uni-forms
 
 /***/ }),
 
-/***/ 50:
+/***/ 63:
 /*!*******************************************************************************************************************!*\
   !*** H:/workTime/wkFront/uni_modules/uni-forms/components/uni-forms/uni-forms.vue?vue&type=template&id=7ae0e404& ***!
   \*******************************************************************************************************************/
@@ -50,7 +50,7 @@ component.options.__file = "uni_modules/uni-forms/components/uni-forms/uni-forms
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_template_id_7ae0e404___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./uni-forms.vue?vue&type=template&id=7ae0e404& */ 51);
+/* harmony import */ var _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_template_id_7ae0e404___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./uni-forms.vue?vue&type=template&id=7ae0e404& */ 64);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_template_id_7ae0e404___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_template_id_7ae0e404___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
@@ -63,7 +63,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 51:
+/***/ 64:
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!H:/workTime/wkFront/uni_modules/uni-forms/components/uni-forms/uni-forms.vue?vue&type=template&id=7ae0e404& ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -90,7 +90,7 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ 52:
+/***/ 65:
 /*!*************************************************************************************************************!*\
   !*** H:/workTime/wkFront/uni_modules/uni-forms/components/uni-forms/uni-forms.vue?vue&type=script&lang=js& ***!
   \*************************************************************************************************************/
@@ -99,14 +99,14 @@ render._withStripped = true
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./uni-forms.vue?vue&type=script&lang=js& */ 53);
+/* harmony import */ var _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./uni-forms.vue?vue&type=script&lang=js& */ 66);
 /* harmony import */ var _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
-/***/ 53:
+/***/ 66:
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!H:/workTime/wkFront/uni_modules/uni-forms/components/uni-forms/uni-forms.vue?vue&type=script&lang=js& ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 54));
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 67));
 
 
 
@@ -123,12 +123,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 4));
-
-
-
-
+var _validate = _interopRequireDefault(__webpack_require__(/*! ./validate.js */ 70));
+var _utils = __webpack_require__(/*! ./utils.js */ 71);
 
 
 
@@ -142,50 +138,74 @@ var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 4));
 
 
 
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 4));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+_vue.default.prototype.binddata = function (name, value, formName) {
+  if (formName) {
+    this.$refs[formName].setValue(name, value);
+  } else {
+    var formVm;
+    for (var i in this.$refs) {
+      var vm = this.$refs[i];
+      if (vm && vm.$options && vm.$options.name === 'uniForms') {
+        formVm = vm;
+        break;
+      }
+    }
+    if (!formVm) return console.error('当前 uni-froms 组件缺少 ref 属性');
+    formVm.setValue(name, value);
+  }
+};
 
-
-
-var _validate = _interopRequireDefault(__webpack_require__(/*! ./validate.js */ 57));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}_vue.default.prototype.binddata = function (name, value, formName) {if (formName) {this.$refs[formName].setValue(name, value);} else {var formVm;for (var i in this.$refs) {var vm = this.$refs[i];if (vm && vm.$options && vm.$options.name === 'uniForms') {formVm = vm;break;}}if (!formVm) return console.error('当前 uni-froms 组件缺少 ref 属性');formVm.setValue(name, value);}};
 /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * Forms 表单
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @description 由输入框、选择器、单选框、多选框等控件组成，用以收集、校验、提交数据
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @tutorial https://ext.dcloud.net.cn/plugin?id=2773
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @property {Object} rules	表单校验规则
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @property {String} validateTrigger = [bind|submit]	校验触发器方式 默认 submit
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @value bind		发生变化时触发
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @value submit	提交时触发
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @property {String} labelPosition = [top|left]	label 位置 默认 left
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @value top		顶部显示 label
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @value left	左侧显示 label
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @property {String} labelWidth	label 宽度，默认 65px
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @property {String} labelAlign = [left|center|right]	label 居中方式  默认 left
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @value left		label 左侧显示
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @value center	label 居中
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @value right		label 右侧对齐
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @property {String} errShowType = [undertext|toast|modal]	校验错误信息提示方式
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @value undertext	错误信息在底部显示
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @value toast			错误信息toast显示
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @value modal			错误信息modal显示
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @event {Function} submit	提交时触发
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            */var _default2 =
-
+    * Forms 表单
+    * @description 由输入框、选择器、单选框、多选框等控件组成，用以收集、校验、提交数据
+    * @tutorial https://ext.dcloud.net.cn/plugin?id=2773
+    * @property {Object} rules	表单校验规则
+    * @property {String} validateTrigger = [bind|submit|blur]	校验触发器方式 默认 submit
+    * @value bind		发生变化时触发
+    * @value submit	提交时触发
+    * @value blur	  失去焦点时触发
+    * @property {String} labelPosition = [top|left]	label 位置 默认 left
+    * @value top		顶部显示 label
+    * @value left	左侧显示 label
+    * @property {String} labelWidth	label 宽度，默认 65px
+    * @property {String} labelAlign = [left|center|right]	label 居中方式  默认 left
+    * @value left		label 左侧显示
+    * @value center	label 居中
+    * @value right		label 右侧对齐
+    * @property {String} errShowType = [undertext|toast|modal]	校验错误信息提示方式
+    * @value undertext	错误信息在底部显示
+    * @value toast			错误信息toast显示
+    * @value modal			错误信息modal显示
+    * @event {Function} submit	提交时触发
+    * @event {Function} validate	校验结果发生变化触发
+    */var _default2 =
 {
   name: 'uniForms',
-  components: {},
-  emits: ['input', 'reset', 'validate', 'submit'],
+  emits: ['validate', 'submit'],
+  options: {
+    virtualHost: true },
+
   props: {
     // 即将弃用
     value: {
       type: Object,
       default: function _default() {
-        return {};
+        return null;
       } },
 
-    // 替换 value 属性
+    // vue3 替换 value 属性
     modelValue: {
       type: Object,
       default: function _default() {
-        return {};
+        return null;
+      } },
+
+    // 1.4.0 开始将不支持 v-model ，且废弃 value 和 modelValue
+    model: {
+      type: Object,
+      default: function _default() {
+        return null;
       } },
 
     // 表单校验规则
@@ -195,59 +215,69 @@ var _validate = _interopRequireDefault(__webpack_require__(/*! ./validate.js */ 
         return {};
       } },
 
-    // 校验触发器方式，默认 关闭
+    //校验错误信息提示方式 默认 undertext 取值 [undertext|toast|modal]
+    errShowType: {
+      type: String,
+      default: 'undertext' },
+
+    // 校验触发器方式 默认 bind 取值 [bind|submit]
     validateTrigger: {
       type: String,
-      default: '' },
+      default: 'submit' },
 
-    // label 位置，可选值 top/left
+    // label 位置，默认 left 取值  top/left
     labelPosition: {
       type: String,
       default: 'left' },
 
-    // label 宽度，单位 px
+    // label 宽度
     labelWidth: {
       type: [String, Number],
       default: '' },
 
-    // label 居中方式，可选值 left/center/right
+    // label 居中方式，默认 left 取值 left/center/right
     labelAlign: {
       type: String,
       default: 'left' },
-
-    errShowType: {
-      type: String,
-      default: 'undertext' },
 
     border: {
       type: Boolean,
       default: false } },
 
 
+  provide: function provide() {
+    return {
+      uniForm: this };
+
+  },
   data: function data() {
     return {
-      formData: {} };
+      // 表单本地值的记录，不应该与传如的值进行关联
+      formData: {},
+      formRules: {} };
 
   },
   computed: {
-    dataValue: function dataValue() {
-      if (JSON.stringify(this.modelValue) === '{}') {
-        return this.value;
-      } else {
-        return this.modelValue;
+    // 计算数据源变化的
+    localData: function localData() {
+      var localVal = this.model || this.modelValue || this.value;
+      if (localVal) {
+        return (0, _utils.deepCopy)(localVal);
       }
+      return {};
     } },
 
   watch: {
-    rules: function rules(newVal) {
-      // 如果规则发生变化，要初始化组件
-      this.init(newVal);
-    },
-    labelPosition: function labelPosition() {
-      this.childrens.forEach(function (vm) {
-        vm.init();
-      });
-    } },
+    // 监听数据变化 ,暂时不使用，需要单独赋值
+    // localData: {},
+    // 监听规则变化
+    rules: {
+      handler: function handler(val, oldVal) {
+        this.setRules(val);
+      },
+      deep: true,
+      immediate: true } },
+
 
   created: function created() {
 
@@ -272,137 +302,132 @@ var _validate = _interopRequireDefault(__webpack_require__(/*! ./validate.js */ 
 
 
 
-    // 存放watch 监听数组
-    this.unwatchs = [];
-    // 存放子组件数组
+    // 子组件实例数组
     this.childrens = [];
-    // 存放 easyInput 组件
+    // TODO 兼容旧版 uni-data-picker ,新版本中无效，只是避免报错
     this.inputChildrens = [];
-    // 存放 dataCheckbox 组件
-    this.checkboxChildrens = [];
-    // 存放规则
-    this.formRules = [];
-    this.init(this.rules);
+    this.setRules(this.rules);
   },
-  // mounted() {
-  // 	this.init(this.rules)
-  // },
   methods: {
-    init: function init(formRules) {
-      // 判断是否有规则
-      if (Object.keys(formRules).length === 0) {
-        this.formData = this.dataValue;
-        return;
-      };
-      this.formRules = formRules;
-      this.validator = new _validate.default(formRules);
-      this.registerWatch();
-    },
-    // 监听 watch
-    registerWatch: function registerWatch() {var _this = this;
-      // 取消监听,避免多次调用 init 重复执行 $watch
-      this.unwatchs.forEach(function (v) {return v();});
-      this.childrens.forEach(function (v) {
-        v.init();
-      });
-      // watch 每个属性 ，需要知道具体那个属性发变化
-      Object.keys(this.dataValue).forEach(function (key) {
-        var watch = _this.$watch(
-        'dataValue.' + key,
-        function (value) {
-          if (!value) return;
-          // 如果是对象 ，则平铺内容
-          if (value.toString() === '[object Object]') {
-            for (var i in value) {
-              var name = "".concat(key, "[").concat(i, "]");
-              _this.formData[name] = _this._getValue(name, value[i]);
-            }
-          } else {
-            _this.formData[key] = _this._getValue(key, value);
-          }
-        },
-        {
-          deep: true,
-          immediate: true });
-
-
-        _this.unwatchs.push(watch);
-      });
-    },
     /**
-        * 公开给用户使用
-        * 设置校验规则
-        * @param {Object} formRules
-        */
-    setRules: function setRules(formRules) {
-      this.init(formRules);
+              * 外部调用方法
+              * 设置规则 ，主要用于小程序自定义检验规则
+              * @param {Array} rules 规则源数据
+              */
+    setRules: function setRules(rules) {
+      // TODO 有可能子组件合并规则的时机比这个要早，所以需要合并对象 ，而不是直接赋值，可能会被覆盖
+      this.formRules = Object.assign({}, this.formRules, rules);
+      // 初始化校验函数
+      this.validator = new _validate.default(rules);
     },
+
     /**
-        * 公开给用户使用
-        * 设置自定义表单组件 value 值
-        *  @param {String} name 字段名称
-        *  @param {String} value 字段值
+        * 外部调用方法
+        * 设置数据，用于设置表单数据，公开给用户使用 ， 不支持在动态表单中使用
+        * @param {Object} key
+        * @param {Object} value
         */
-    setValue: function setValue(name, value, callback) {
-      var example = this.childrens.find(function (child) {return child.name === name;});
+    setValue: function setValue(key, value) {
+      var example = this.childrens.find(function (child) {return child.name === key;});
       if (!example) return null;
-      value = this._getValue(example.name, value);
-      this.formData[name] = value;
-      example.val = value;
-      return example.triggerCheck(value, callback);
+      this.formData[key] = (0, _utils.getValue)(key, value, this.formRules[key] && this.formRules[key].rules || []);
+      return example.onFieldChange(this.formData[key]);
     },
 
     /**
-        * 表单重置
-        * @param {Object} event
+        * 外部调用方法
+        * 手动提交校验表单
+        * 对整个表单进行校验的方法，参数为一个回调函数。
+        * @param {Array} keepitem 保留不参与校验的字段
+        * @param {type} callback 方法回调
         */
-    resetForm: function resetForm(event) {var _this2 = this;
+    validate: function validate(keepitem, callback) {
+      return this.checkAll(this.formData, keepitem, callback);
+    },
+
+    /**
+        * 外部调用方法
+        * 部分表单校验
+        * @param {Array|String} props 需要校验的字段
+        * @param {Function} 回调函数
+        */
+    validateField: function validateField() {var _this = this;var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];var callback = arguments.length > 1 ? arguments[1] : undefined;
+      props = [].concat(props);
+      var invalidFields = {};
       this.childrens.forEach(function (item) {
-        item.errMsg = '';
-        var inputComp = _this2.inputChildrens.find(function (child) {return child.rename === item.name;});
-        if (inputComp) {
-          inputComp.errMsg = '';
-          // fix by mehaotian 不触发其他组件的 setValue
-          inputComp.is_reset = true;
-          inputComp.$emit('input', inputComp.multiple ? [] : '');
-          inputComp.$emit('update:modelValue', inputComp.multiple ? [] : '');
+        var name = (0, _utils.realName)(item.name);
+        if (props.indexOf(name) !== -1) {
+          invalidFields = Object.assign({}, invalidFields, _defineProperty({},
+          name, _this.formData[name]));
+
         }
       });
+      return this.checkAll(invalidFields, [], callback);
+    },
 
+    /**
+        * 外部调用方法
+        * 移除表单项的校验结果。传入待移除的表单项的 prop 属性或者 prop 组成的数组，如不传则移除整个表单的校验结果
+        * @param {Array|String} props 需要移除校验的字段 ，不填为所有
+        */
+    clearValidate: function clearValidate() {var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+      props = [].concat(props);
       this.childrens.forEach(function (item) {
-        if (item.name) {
-          _this2.formData[item.name] = _this2._getValue(item.name, '');
+        if (props.length === 0) {
+          item.errMsg = '';
+        } else {
+          var name = (0, _utils.realName)(item.name);
+          if (props.indexOf(name) !== -1) {
+            item.errMsg = '';
+          }
         }
       });
-
-      this.$emit('reset', event);
     },
 
     /**
-        * 触发表单校验，通过 @validate 获取
-        * @param {Object} validate
+        * 外部调用方法 ，即将废弃
+        * 手动提交校验表单
+        * 对整个表单进行校验的方法，参数为一个回调函数。
+        * @param {Array} keepitem 保留不参与校验的字段
+        * @param {type} callback 方法回调
         */
-    validateCheck: function validateCheck(validate) {
-      if (validate === null) validate = null;
-      this.$emit('validate', validate);
+    submit: function submit(keepitem, callback, type) {var _this2 = this;var _loop = function _loop(
+      i) {
+        var itemData = _this2.childrens.find(function (v) {return v.name === i;});
+        if (itemData) {
+          if (_this2.formData[i] === undefined) {
+            _this2.formData[i] = _this2._getValue(i, _this2.dataValue[i]);
+          }
+        }};for (var i in this.dataValue) {_loop(i);
+      }
+
+      if (!type) {
+        console.warn('submit 方法即将废弃，请使用validate方法代替！');
+      }
+
+      return this.checkAll(this.formData, keepitem, callback, 'submit');
     },
-    /**
-        * 校验所有或者部分表单
-        */
-    validateAll: function validateAll(invalidFields, type, keepitem, callback) {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var childrens, _loop, i, promise, results, newFormData, key, child, name, fieldData, fieldName, fieldValue, result;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
-                childrens = [];_loop = function _loop(
-                i) {
-                  var item = _this3.childrens.find(function (v) {return v.name === i;});
+
+    // 校验所有
+    checkAll: function checkAll(invalidFields, keepitem, callback, type) {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var childrens, _loop2, i, promise, results, tempFormData, _i, child, name, result, resetFormData;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:if (
+
+                _this3.validator) {_context.next = 2;break;}return _context.abrupt("return");case 2:
+                childrens = [];
+                // 处理参与校验的item实例
+                _loop2 = function _loop2(i) {
+                  var item = _this3.childrens.find(function (v) {return (0, _utils.realName)(v.name) === i;});
                   if (item) {
                     childrens.push(item);
-                  }};for (i in invalidFields) {_loop(i);
+                  }};for (i in invalidFields) {_loop2(i);
                 }
 
+                // 如果validate第一个参数是funciont ,那就走回调
                 if (!callback && typeof keepitem === 'function') {
                   callback = keepitem;
                 }
 
 
+                // 如果不存在回调，那么使用 Promise 方式返回
                 if (!callback && typeof callback !== 'function' && Promise) {
                   promise = new Promise(function (resolve, reject) {
                     callback = function callback(valid, invalidFields) {
@@ -412,47 +437,39 @@ var _validate = _interopRequireDefault(__webpack_require__(/*! ./validate.js */ 
                 }
 
                 results = [];
-                newFormData = {};if (!
-                _this3.validator) {_context.next = 25;break;}_context.t0 = _regenerator.default.keys(
-                childrens);case 9:if ((_context.t1 = _context.t0()).done) {_context.next = 23;break;}key = _context.t1.value;
-                child = childrens[key];
-                name = child.isArray ? child.arrayField : child.name;
-                if (child.isArray) {
-                  if (child.name.indexOf('[') !== -1 && child.name.indexOf(']') !== -1) {
-                    fieldData = child.name.split('[');
-                    fieldName = fieldData[0];
-                    fieldValue = fieldData[1].replace(']', '');
-                    if (!newFormData[fieldName]) {
-                      newFormData[fieldName] = {};
-                    }
-                    newFormData[fieldName][fieldValue] = _this3._getValue(name, invalidFields[name]);
-                  }
-                } else {
-                  newFormData[name] = _this3._getValue(name, invalidFields[name]);
-                }_context.next = 16;return (
-                  child.triggerCheck(invalidFields[name], true));case 16:result = _context.sent;if (!
+                // 避免引用错乱 ，建议拷贝对象处理
+                tempFormData = JSON.parse(JSON.stringify(invalidFields));
+                // 所有子组件参与校验,使用 for 可以使用  awiat
+                _context.t0 = _regenerator.default.keys(childrens);case 10:if ((_context.t1 = _context.t0()).done) {_context.next = 23;break;}_i = _context.t1.value;
+                child = childrens[_i];
+                name = (0, _utils.realName)(child.name);_context.next = 16;return (
+                  child.onFieldChange(tempFormData[name]));case 16:result = _context.sent;if (!
                 result) {_context.next = 21;break;}
-                results.push(result);if (!(
-                _this3.errShowType === 'toast' || _this3.errShowType === 'modal')) {_context.next = 21;break;}return _context.abrupt("break", 23);case 21:_context.next = 9;break;case 23:_context.next = 26;break;case 25:
+                results.push(result);
+                // toast ,modal 只需要执行第一次就可以
+                if (!(_this3.errShowType === 'toast' || _this3.errShowType === 'modal')) {_context.next = 21;break;}return _context.abrupt("break", 23);case 21:_context.next = 10;break;case 23:
 
 
 
-                newFormData = invalidFields;case 26:
 
                 if (Array.isArray(results)) {
                   if (results.length === 0) results = null;
                 }
-
                 if (Array.isArray(keepitem)) {
                   keepitem.forEach(function (v) {
-                    newFormData[v] = _this3.dataValue[v];
+                    var vName = (0, _utils.realName)(v);
+                    var value = (0, _utils.getDataValue)(v, _this3.localData);
+                    if (value !== undefined) {
+                      tempFormData[vName] = value;
+                    }
                   });
                 }
 
+                // TODO submit 即将废弃
                 if (type === 'submit') {
                   _this3.$emit('submit', {
                     detail: {
-                      value: newFormData,
+                      value: tempFormData,
                       errors: results } });
 
 
@@ -460,121 +477,37 @@ var _validate = _interopRequireDefault(__webpack_require__(/*! ./validate.js */ 
                   _this3.$emit('validate', results);
                 }
 
-                callback && typeof callback === 'function' && callback(results, newFormData);if (!(
+                // const resetFormData = rawData(tempFormData, this.localData, this.name)
+                resetFormData = {};
+                resetFormData = (0, _utils.rawData)(tempFormData, _this3.name);
+                callback && typeof callback === 'function' && callback(results, resetFormData);if (!(
 
-                promise && callback)) {_context.next = 34;break;}return _context.abrupt("return",
-                promise);case 34:return _context.abrupt("return",
+                promise && callback)) {_context.next = 33;break;}return _context.abrupt("return",
+                promise);case 33:return _context.abrupt("return",
 
-                null);case 35:case "end":return _context.stop();}}}, _callee);}))();
+                null);case 34:case "end":return _context.stop();}}}, _callee);}))();
 
-    },
-    submitForm: function submitForm() {},
-    /**
-                                           * 外部调用方法
-                                           * 手动提交校验表单
-                                           * 对整个表单进行校验的方法，参数为一个回调函数。
-                                           */
-    submit: function submit(keepitem, callback, type) {var _this4 = this;var _loop2 = function _loop2(
-      i) {
-        var itemData = _this4.childrens.find(function (v) {return v.name === i;});
-        if (itemData) {
-          if (_this4.formData[i] === undefined) {
-            _this4.formData[i] = _this4._getValue(i, _this4.dataValue[i]);
-          }
-        }};for (var i in this.dataValue) {_loop2(i);
-      }
-      if (!type) {
-        console.warn('submit 方法即将废弃，请使用validate方法代替！');
-      }
-      return this.validateAll(this.formData, 'submit', keepitem, callback);
+
     },
 
     /**
-        * 外部调用方法
-        * 校验表单
-        * 对整个表单进行校验的方法，参数为一个回调函数。
+        * 返回validate事件
+        * @param {Object} result
         */
-    validate: function validate(keepitem, callback) {
-      return this.submit(keepitem, callback, true);
+    validateCheck: function validateCheck(result) {
+      this.$emit('validate', result);
     },
-
-    /**
-        * 部分表单校验
-        * @param {Object} props
-        * @param {Object} cb
-        */
-    validateField: function validateField(props, callback) {var _this5 = this;
-      props = [].concat(props);
-      var invalidFields = {};
-      this.childrens.forEach(function (item) {
-        if (props.indexOf(item.name) !== -1) {
-          invalidFields = Object.assign({}, invalidFields, _defineProperty({},
-          item.name, _this5.formData[item.name]));
-
-        }
-      });
-      return this.validateAll(invalidFields, 'submit', [], callback);
-    },
-
-    /**
-        * 对整个表单进行重置，将所有字段值重置为初始值并移除校验结果
-        */
-    resetFields: function resetFields() {
-      this.resetForm();
-    },
-
-    /**
-        * 移除表单项的校验结果。传入待移除的表单项的 prop 属性或者 prop 组成的数组，如不传则移除整个表单的校验结果
-        */
-    clearValidate: function clearValidate(props) {var _this6 = this;
-      props = [].concat(props);
-      this.childrens.forEach(function (item) {
-        var inputComp = _this6.inputChildrens.find(function (child) {return child.rename === item.name;});
-        if (props.length === 0) {
-          item.errMsg = '';
-          if (inputComp) {
-            inputComp.errMsg = '';
-          }
-        } else {
-          if (props.indexOf(item.name) !== -1) {
-            item.errMsg = '';
-            if (inputComp) {
-              inputComp.errMsg = '';
-            }
-          }
-        }
-      });
-    },
-    /**
-        * 把 value 转换成指定的类型
-        * @param {Object} key
-        * @param {Object} value
-        */
-    _getValue: function _getValue(key, value) {var _this7 = this;
-      var rules = this.formRules[key] && this.formRules[key].rules || [];
-      var isRuleNum = rules.find(function (val) {return val.format && _this7.type_filter(val.format);});
-      var isRuleBool = rules.find(function (val) {return val.format && val.format === 'boolean' || val.format === 'bool';});
-      // 输入值为 number
-      if (isRuleNum) {
-        value = isNaN(value) ? value : value === '' || value === null ? null : Number(value);
-      }
-      // 简单判断真假值
-      if (isRuleBool) {
-        value = !value ? false : true;
-      }
-      return value;
-    },
-    /**
-        * 过滤数字类型
-        * @param {Object} format
-        */
-    type_filter: function type_filter(format) {
-      return format === 'int' || format === 'double' || format === 'number' || format === 'timestamp';
-    } } };exports.default = _default2;
+    _getValue: _utils.getValue,
+    _isRequiredField: _utils.isRequiredField,
+    _setDataValue: _utils.setDataValue,
+    _getDataValue: _utils.getDataValue,
+    _realName: _utils.realName,
+    _isRealName: _utils.isRealName,
+    _isEqual: _utils.isEqual } };exports.default = _default2;
 
 /***/ }),
 
-/***/ 58:
+/***/ 72:
 /*!**********************************************************************************************************************!*\
   !*** H:/workTime/wkFront/uni_modules/uni-forms/components/uni-forms/uni-forms.vue?vue&type=style&index=0&lang=scss& ***!
   \**********************************************************************************************************************/
@@ -583,14 +516,14 @@ var _validate = _interopRequireDefault(__webpack_require__(/*! ./validate.js */ 
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_2_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./uni-forms.vue?vue&type=style&index=0&lang=scss& */ 59);
+/* harmony import */ var _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_2_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./uni-forms.vue?vue&type=style&index=0&lang=scss& */ 73);
 /* harmony import */ var _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_2_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_2_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_2_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_2_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_2_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_20220816_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_uni_forms_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
-/***/ 59:
+/***/ 73:
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!H:/workTime/wkFront/uni_modules/uni-forms/components/uni-forms/uni-forms.vue?vue&type=style&index=0&lang=scss& ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -609,7 +542,7 @@ __webpack_require__.r(__webpack_exports__);
     'uni_modules/uni-forms/components/uni-forms/uni-forms-create-component',
     {
         'uni_modules/uni-forms/components/uni-forms/uni-forms-create-component':(function(module, exports, __webpack_require__){
-            __webpack_require__('1')['createComponent'](__webpack_require__(49))
+            __webpack_require__('1')['createComponent'](__webpack_require__(62))
         })
     },
     [['uni_modules/uni-forms/components/uni-forms/uni-forms-create-component']]

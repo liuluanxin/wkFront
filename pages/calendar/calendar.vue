@@ -1,10 +1,6 @@
 <template>
-	<view class="calendar-content" v-if="showCalendar">
-		<text class="example-info"></text>
-		<view>
-			<!-- 插入模式 -->
-			<uni-calendar class="uni-calendar--hook" :selected="info.selected" :showMonth="false" @change="change" @monthSwitch="monthSwitch" />
-		</view>
+	<view class="calendar-content">
+		<view><uni-calendar class="uni-calendar--hook" :selected="info.selected" :showMonth="false" @monthSwitch="monthSwitch" /></view>
 	</view>
 </template>
 
@@ -38,7 +34,6 @@ export default {
 	components: {},
 	data() {
 		return {
-			showCalendar: false,
 			info: {
 				lunar: true,
 				range: true,
@@ -53,9 +48,6 @@ export default {
 		});
 		// TODO 模拟请求异步同步数据
 		setTimeout(() => {
-			this.info.date = getDate(new Date(), -30).fullDate;
-			this.info.startDate = getDate(new Date(), -60).fullDate;
-			this.info.endDate = getDate(new Date(), 30).fullDate;
 			this.info.selected = [
 				{
 					date: getDate(new Date(), -3).fullDate,
@@ -63,11 +55,7 @@ export default {
 				},
 				{
 					date: getDate(new Date(), -2).fullDate,
-					info: '签到',
-					data: {
-						custom: '自定义信息',
-						name: '自定义消息头'
-					}
+					info: '签到'
 				},
 				{
 					date: getDate(new Date(), -1).fullDate,
@@ -77,15 +65,6 @@ export default {
 		}, 2000);
 	},
 	methods: {
-		change(e) {
-			console.log('change 返回:', e);
-			// 模拟动态打卡
-			// if (this.info.selected.length > 6) return;
-			this.info.selected.push({
-				date: e.fulldate,
-				info: '打卡'
-			});
-		},
 		monthSwitch(e) {
 			console.log('monthSwitchs 返回:', e);
 		}

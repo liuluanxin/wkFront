@@ -95,6 +95,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
+try {
+  components = {
+    uniForms: function() {
+      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms/uni-forms */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms/uni-forms")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms/uni-forms.vue */ 62))
+    },
+    uniFormsItem: function() {
+      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms-item/uni-forms-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms-item/uni-forms-item")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue */ 74))
+    },
+    uniDatetimePicker: function() {
+      return Promise.all(/*! import() | uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker.vue */ 88))
+    },
+    uniDataSelect: function() {
+      return Promise.all(/*! import() | uni_modules/uni-data-select/components/uni-data-select/uni-data-select */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-data-select/components/uni-data-select/uni-data-select")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-data-select/components/uni-data-select/uni-data-select.vue */ 99))
+    },
+    uniEasyinput: function() {
+      return __webpack_require__.e(/*! import() | uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput */ "uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue */ 81))
+    }
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -132,7 +167,19 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -142,11 +189,47 @@ var _default =
 {
   data: function data() {
     return {
-      title: 'Hello' };
+      form: { targetDate: new Date().fullDate, projectId: 0, time: '', comment: '' },
+      range: [{ value: 0, text: 'NW 李' }, { value: 1, text: '社员 林' }, { value: 2, text: 'yamato 张' }],
+      rules: {
+        targetDate: {
+          rules: [{ required: true, errorMessage: '请输入加班日期' }],
+          validateTrigger: 'submit' },
+
+        projectId: {
+          rules: [{ required: true, errorMessage: '请输入财务ID' }],
+          validateTrigger: 'submit' },
+
+        time: {
+          rules: [{ required: true, errorMessage: '请输入加班时长' }],
+          validateTrigger: 'submit' },
+
+        comment: {
+          rules: [{ required: true, errorMessage: '请输入加班理由' }],
+          validateTrigger: 'submit' } } };
+
+
 
   },
-  onLoad: function onLoad() {},
-  methods: {} };exports.default = _default;
+  methods: {
+    apply: function apply() {var _this = this;
+      var BASE_URL = 'http://localhost:8080';
+      this.$refs.form.validate().then(function (res) {
+        console.log('111', res);
+        uni.request({
+          url: BASE_URL + '/user-extra-worktime',
+          method: 'POST',
+          data: _this.form,
+          success: function success(res) {
+            console.log('2', res);
+          } });
+
+      });
+    },
+    change: function change(e) {
+      console.log('change 返回:', e);
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
