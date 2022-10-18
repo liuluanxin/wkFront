@@ -46,7 +46,7 @@ export default {
 							if (res.data !== '') {
 								// 跳转页面
 								uni.redirectTo({
-									url: '/pages/index/index'
+									url: '/pages/calendar/calendar'
 								});
 								uni.showToast({
 									title: '登录成功'
