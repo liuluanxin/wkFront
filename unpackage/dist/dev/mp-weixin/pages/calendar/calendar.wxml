@@ -1,1 +1,1 @@
-<view class="calendar-content"><view><uni-calendar class="uni-calendar--hook" vue-id="4e2f4d80-1" selected="{{info.selected}}" showMonth="{{false}}" data-event-opts="{{[['^monthSwitch',[['monthSwitch']]]]}}" bind:monthSwitch="__e" bind:__l="__l"></uni-calendar></view></view>
+<view class="calendar-content"><view class="center_title">当前月加班时间日历</view><view><uni-calendar vue-id="4e2f4d80-1" selected="{{info.selected}}" showMonth="{{false}}" bind:__l="__l"></uni-calendar></view></view>

@@ -1,6 +1,7 @@
 <template>
 	<view class="calendar-content">
-		<view><uni-calendar class="uni-calendar--hook" :selected="info.selected" :showMonth="false" @monthSwitch="monthSwitch" /></view>
+		<view class="center_title">当前月加班时间日历</view>
+		<view><uni-calendar :selected="info.selected" :showMonth="false" /></view>
 	</view>
 </template>
 
@@ -43,46 +44,37 @@ export default {
 		};
 	},
 	onReady() {
-		this.$nextTick(() => {
-			this.showCalendar = true;
+		const BASE_URL = 'http://localhost:8080';
+		const res = uni.request({
+			url: BASE_URL + '/user-worktime',
+			method: 'GET',
+			success: res => {
+				if (res.statusCode == '200') {
+					const all = res.data.list;
+					const myrange = [];
+					all.map(res => {
+						myrange.push({ date: getDate(res.targetDate).fullDate, info: res.time + '小时' });
+					});
+					console.log('12222', myrange);
+					setTimeout(() => {
+						this.info.selected = myrange;
+					}, 2000);
+					this.show = true;
+				}
+			}
 		});
 		// TODO 模拟请求异步同步数据
-		setTimeout(() => {
-			this.info.selected = [
-				{
-					date: getDate(new Date(), -3).fullDate,
-					info: '打卡'
-				},
-				{
-					date: getDate(new Date(), -2).fullDate,
-					info: '签到'
-				},
-				{
-					date: getDate(new Date(), -1).fullDate,
-					info: '已打卡'
-				}
-			];
-		}, 2000);
 	},
-	methods: {
-		monthSwitch(e) {
-			console.log('monthSwitchs 返回:', e);
-		}
-	}
+	methods: {}
 };
 </script>
 
-<style lang="scss">
-.example-body {
-	/* #ifndef APP-NVUE */
-	display: flex;
-	/* #endif */
-	flex-direction: row;
-}
-
-.calendar-button {
-	flex: 2;
-	font-weight: bold;
-	font-size: 32rpx;
+<style>
+.center_title {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 20upx;
+	text-align: center;
+	font-size: 34upx;
 }
 </style>

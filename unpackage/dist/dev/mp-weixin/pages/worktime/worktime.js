@@ -96,19 +96,19 @@ var components
 try {
   components = {
     uniForms: function() {
-      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms/uni-forms */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms/uni-forms")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms/uni-forms.vue */ 62))
+      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms/uni-forms */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms/uni-forms")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms/uni-forms.vue */ 60))
     },
     uniFormsItem: function() {
-      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms-item/uni-forms-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms-item/uni-forms-item")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue */ 74))
+      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms-item/uni-forms-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms-item/uni-forms-item")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue */ 72))
     },
     uniDatetimePicker: function() {
-      return Promise.all(/*! import() | uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker.vue */ 88))
+      return Promise.all(/*! import() | uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker.vue */ 86))
     },
     uniDataSelect: function() {
-      return Promise.all(/*! import() | uni_modules/uni-data-select/components/uni-data-select/uni-data-select */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-data-select/components/uni-data-select/uni-data-select")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-data-select/components/uni-data-select/uni-data-select.vue */ 99))
+      return Promise.all(/*! import() | uni_modules/uni-data-select/components/uni-data-select/uni-data-select */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-data-select/components/uni-data-select/uni-data-select")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-data-select/components/uni-data-select/uni-data-select.vue */ 97))
     },
     uniEasyinput: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput */ "uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue */ 81))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput */ "uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue */ 79))
     }
   }
 } catch (e) {
@@ -189,7 +189,7 @@ var _default =
 {
   data: function data() {
     return {
-      range: [{ value: 0, text: 'NW 李' }, { value: 1, text: '社员 林' }, { value: 2, text: 'yamato 张' }],
+      range: [],
       form: { targetDate: new Date().fullDate, projectId: 0 },
       rules: {
         targetDate: {
@@ -212,6 +212,7 @@ var _default =
 
   },
   methods: {
+    // 审批提出
     swithChange: function swithChange(e) {
       if (e.detail.value) {
         this.statusApplyBool = true;
@@ -219,7 +220,27 @@ var _default =
         this.statusApplyBool = false;
       }
     },
-    apply: function apply() {var _this = this;
+    // 财务ID初期化显示
+    onReady: function onReady() {var _this = this;
+      var BASE_URL = 'http://localhost:8080';
+      var res = uni.request({
+        url: BASE_URL + '/project',
+        method: 'GET',
+        success: function success(res) {
+          if (res.statusCode == '200') {
+            var all = res.data.list;
+            var myrange = [];
+            all.map(function (res) {
+              myrange.push({ value: res.id, text: res.projectName });
+            });
+            _this.range = myrange;
+            _this.show = true;
+          }
+        } });
+
+    },
+    // 申请
+    apply: function apply() {var _this2 = this;
       var BASE_URL = 'http://localhost:8080';
       this.$refs.form.validate().then(function (res) {
         uni.request({
@@ -227,17 +248,22 @@ var _default =
           method: 'POST',
           data: _objectSpread(_objectSpread({},
           res), {}, {
-            statusApplyBool: _this.statusApplyBool }),
+            statusApplyBool: _this2.statusApplyBool }),
 
           success: function success(res) {
-            console.log('1111', res.statusCode == '200');
             if (res.statusCode == '200') {
-              console.log('1111');
               uni.redirectTo({
                 url: '/pages/calendar/calendar' });
 
+              uni.showToast({
+                title: '申请成功' });
+
+            } else {
+              uni.showModal({
+                title: '当前日期和财务ID的申请记录已经存在，请确认日期和财务ID的内容是否正确。',
+                showCancel: false });
+
             }
-            console.log('2', res);
           } });
 
       });

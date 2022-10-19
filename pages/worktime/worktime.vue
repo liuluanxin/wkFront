@@ -22,7 +22,7 @@
 export default {
 	data() {
 		return {
-			range: [{ value: 0, text: 'NW 李' }, { value: 1, text: '社员 林' }, { value: 2, text: 'yamato 张' }],
+			range: [],
 			form: { targetDate: new Date().fullDate, projectId: 0 },
 			rules: {
 				targetDate: {
@@ -45,6 +45,7 @@ export default {
 		};
 	},
 	methods: {
+		// 审批提出
 		swithChange(e) {
 			if (e.detail.value) {
 				this.statusApplyBool = true;
@@ -52,6 +53,26 @@ export default {
 				this.statusApplyBool = false;
 			}
 		},
+		// 财务ID初期化显示
+		onReady() {
+			const BASE_URL = 'http://localhost:8080';
+			const res = uni.request({
+				url: BASE_URL + '/project',
+				method: 'GET',
+				success: res => {
+					if (res.statusCode == '200') {
+						const all = res.data.list;
+						const myrange = [];
+						all.map(res => {
+							myrange.push({ value: res.id, text: res.projectName });
+						});
+						this.range = myrange;
+						this.show = true;
+					}
+				}
+			});
+		},
+		// 申请
 		apply() {
 			const BASE_URL = 'http://localhost:8080';
 			this.$refs.form.validate().then(res => {
@@ -63,14 +84,19 @@ export default {
 						statusApplyBool: this.statusApplyBool
 					},
 					success: res => {
-						console.log('1111', res.statusCode == '200');
 						if (res.statusCode == '200') {
-							console.log('1111');
 							uni.redirectTo({
 								url: '/pages/calendar/calendar'
 							});
+							uni.showToast({
+								title: '申请成功'
+							});
+						} else {
+							uni.showModal({
+								title: '当前日期和财务ID的申请记录已经存在，请确认日期和财务ID的内容是否正确。',
+								showCancel: false
+							});
 						}
-						console.log('2', res);
 					}
 				});
 			});
