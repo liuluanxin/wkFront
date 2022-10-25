@@ -47,23 +47,10 @@
   background-color: rgba(249, 249, 249, 0.3);
   color: #c0c0c0;
 }
-.uni-calendar-item--isDay-text.data-v-6097fd5b {
-  color: #ff5a5f;
-}
-.uni-calendar-item--isDay.data-v-6097fd5b {
-  background-color: #f2f3f5;
-  opacity: 0.8;
-  color: #333;
-}
 .uni-calendar-item--extra.data-v-6097fd5b {
   color: #e43d33;
   height: 0px;
   margin-top: 5px;
-  opacity: 0.8;
-}
-.uni-calendar-item--checked.data-v-6097fd5b {
-  background-color: #f2f3f5;
-  color: #000000;
   opacity: 0.8;
 }
 .uni-calendar-item--multiple.data-v-6097fd5b {

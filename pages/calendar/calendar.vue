@@ -1,7 +1,8 @@
 <template>
 	<view class="calendar-content">
 		<view class="center_title">当前月加班时间日历</view>
-		<view><uni-calendar :selected="info.selected" :showMonth="false" /></view>
+		<view class="">当月加班时间合计：{{ allTime }}小时</view>
+		<view><uni-calendar :selected="info.selected" @monthSwitch="monthSwitch" /></view>
 	</view>
 </template>
 
@@ -40,32 +41,63 @@ export default {
 				range: true,
 				insert: false,
 				selected: []
-			}
+			},
+			allData: '',
+			allTime: ''
 		};
 	},
-	onReady() {
-		const BASE_URL = 'http://localhost:8080';
+	onShow() {
+		const BASE_URL = 'http://10.0.193.60:8080';
 		const res = uni.request({
 			url: BASE_URL + '/user-worktime',
 			method: 'GET',
+			data: { year: new Date().getFullYear(), month: new Date().getMonth() + 1 },
 			success: res => {
 				if (res.statusCode == '200') {
 					const all = res.data.list;
 					const myrange = [];
+					const time = [];
 					all.map(res => {
 						myrange.push({ date: getDate(res.targetDate).fullDate, info: res.time + '小时' });
+						time.push({ info: res.time });
 					});
-					console.log('12222', myrange);
 					setTimeout(() => {
 						this.info.selected = myrange;
-					}, 2000);
+						this.allTime = time.reduce((sum, current) => sum + current.info, 0);
+					}, 200);
+					this.allData = all;
 					this.show = true;
 				}
 			}
 		});
-		// TODO 模拟请求异步同步数据
 	},
-	methods: {}
+	methods: {
+		monthSwitch(e) {
+			const BASE_URL = 'http://10.0.193.60:8080';
+			const res = uni.request({
+				url: BASE_URL + '/user-worktime',
+				method: 'GET',
+				data: { year: e.year, month: e.month },
+				success: res => {
+					if (res.statusCode == '200') {
+						const all = res.data.list;
+						const myrange = [];
+						const time = [];
+						all.map(res => {
+							myrange.push({ date: getDate(res.targetDate).fullDate, info: res.time + '小时' });
+							time.push({ info: res.time });
+						});
+						setTimeout(() => {
+							this.info.selected = myrange;
+							this.allTime = time.reduce((sum, current) => sum + current.info, 0);
+						}, 200);
+						this.allData = all;
+						this.show = true;
+					}
+				}
+			});
+		}
+	}
 };
 </script>
 

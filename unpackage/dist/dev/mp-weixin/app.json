@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/worktime/worktimeList",
     "pages/calendar/calendar",
+    "pages/worktime/worktimeEditDetail",
     "pages/login/login",
     "pages/register/register",
-    "pages/worktime/worktime",
-    "pages/user/user"
+    "pages/worktime/worktimeEdit"
   ],
   "subPackages": [],
   "window": {
@@ -21,24 +22,27 @@
     "selectedColor": "#f33e54",
     "list": [
       {
-        "pagePath": "pages/calendar/calendar",
-        "iconPath": "static/img/tabbar/home.png",
-        "selectedIconPath": "static/img/tabbar/homeactive.png",
-        "text": "首页"
+        "pagePath": "pages/worktime/worktimeList",
+        "iconPath": "static/img/tabbar/me.png",
+        "selectedIconPath": "static/img/tabbar/meactive.png",
+        "text": "个人"
       },
       {
-        "pagePath": "pages/worktime/worktime",
+        "pagePath": "pages/worktime/worktimeEdit",
         "iconPath": "static/img/tabbar/add.png",
         "selectedIconPath": "static/img/tabbar/addactive.png",
         "text": "申请"
       },
       {
-        "pagePath": "pages/user/user",
-        "iconPath": "static/img/tabbar/me.png",
-        "selectedIconPath": "static/img/tabbar/meactive.png",
-        "text": "我"
+        "pagePath": "pages/calendar/calendar",
+        "iconPath": "static/img/tabbar/home.png",
+        "selectedIconPath": "static/img/tabbar/homeactive.png",
+        "text": "记录查询"
       }
     ]
+  },
+  "uniStatistics": {
+    "enable": true
   },
   "usingComponents": {}
 }

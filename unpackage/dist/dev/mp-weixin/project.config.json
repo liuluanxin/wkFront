@@ -6,6 +6,9 @@
   },
   "setting": {
     "urlCheck": false,
+    "minified": true,
+    "postcss": true,
+    "ignoreUploadUnusedFiles": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -13,9 +16,9 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.17.0",
-  "appid": "touristappid",
-  "projectname": "wk",
+  "libVersion": "2.26.2",
+  "appid": "wxac5eb96a7bf6a6b4",
+  "projectname": "worktime",
   "condition": {
     "search": {
       "current": -1,

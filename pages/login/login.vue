@@ -33,7 +33,7 @@ export default {
 	},
 	methods: {
 		login() {
-			const BASE_URL = 'http://localhost:8080';
+			const BASE_URL = 'http://10.0.193.60:8080';
 			this.$refs.form
 				.validate()
 				.then(res => {

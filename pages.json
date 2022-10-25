@@ -1,33 +1,34 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/worktime/worktimeList",
+			"style": {
+				"navigationBarTitleText": "个人加班时间一览"
+			}
+		}, {
 			"path": "pages/calendar/calendar",
 			"style": {
-				"navigationBarTitleText": "主页"
+				"navigationBarTitleText": "记录查询"
 			}
-		},
-		{
+		}, {
+			"path": "pages/worktime/worktimeEditDetail",
+			"style": {
+				"navigationBarTitleText": "详细页"
+			}
+		}, {
 			"path": "pages/login/login",
 			"style": {
 				"navigationBarTitleText": "登录"
 			}
-		},
-		{
+		}, {
 			"path": "pages/register/register",
 			"style": {
 				"navigationBarTitleText": "注册"
 			}
-		}, 
-		{
-			"path": "pages/worktime/worktime",
+		}, {
+			"path": "pages/worktime/worktimeEdit",
 			"style": {
 				"navigationBarTitleText": "申请"
-			}
-		},
-		{
-			"path": "pages/user/user",
-			"style": {
-				"navigationBarTitleText": "我的"
 			}
 		}
 	],
@@ -44,23 +45,23 @@
 		"color": "#8F8F94",
 		"selectedColor": "#f33e54",
 		"list": [{
-				"pagePath": "pages/calendar/calendar",
-				"iconPath": "static/img/tabbar/home.png",
-				"selectedIconPath": "static/img/tabbar/homeactive.png",
-				"text": "首页"
+				"pagePath": "pages/worktime/worktimeList",
+				"iconPath": "static/img/tabbar/me.png",
+				"selectedIconPath": "static/img/tabbar/meactive.png",
+				"text": "个人"
 			},
 			{
-				"pagePath": "pages/worktime/worktime",
+				"pagePath": "pages/worktime/worktimeEdit",
 				"iconPath": "static/img/tabbar/add.png",
 				"selectedIconPath": "static/img/tabbar/addactive.png",
 				"text": "申请"
-			},
-			{
-				"pagePath": "pages/user/user",
-				"iconPath": "static/img/tabbar/me.png",
-				"selectedIconPath": "static/img/tabbar/meactive.png",
-				"text": "我"
+			}, {
+				"pagePath": "pages/calendar/calendar",
+				"iconPath": "static/img/tabbar/home.png",
+				"selectedIconPath": "static/img/tabbar/homeactive.png",
+				"text": "记录查询"
 			}
+
 		]
 	}
 }

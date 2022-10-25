@@ -20,7 +20,7 @@
 				<view class="uni-calendar__header-btn-box" @click.stop="next">
 					<view class="uni-calendar__header-btn uni-calendar--right"></view>
 				</view>
-				<text class="uni-calendar__backtoday" @click="backtoday">{{todayText}}</text>
+				<!-- <text class="uni-calendar__backtoday" @click="backtoday">{{todayText}}</text> -->
 
 			</view>
 			<view class="uni-calendar__box">
