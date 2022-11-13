@@ -6,7 +6,9 @@
 			<uni-forms ref="form" :modelValue="form" :rules="rules">
 				<uni-forms-item name="userName"><uni-easyinput v-model="form.userName" prefixIcon="person" placeholder="请输入用户名"></uni-easyinput></uni-forms-item>
 
-				<uni-forms-item name="passWord"><uni-easyinput type="password" v-model="form.passWord" prefixIcon="locked" placeholder="请输入密码"></uni-easyinput></uni-forms-item>
+				<uni-forms-item name="passWord">
+					<uni-easyinput type="password" v-model="form.passWord" prefixIcon="locked" placeholder="请输入密码"></uni-easyinput>
+				</uni-forms-item>
 				<uni-forms-item name="confirm"><uni-easyinput type="password" v-model="form.confirm" prefixIcon="locked" placeholder="请确认密码"></uni-easyinput></uni-forms-item>
 			</uni-forms>
 
@@ -38,7 +40,6 @@ export default {
 	},
 	methods: {
 		register() {
-			const BASE_URL = 'http://10.0.193.60:8080';
 			this.$refs.form
 				.validate()
 				.then(res => {
@@ -49,19 +50,18 @@ export default {
 						});
 						return;
 					}
-					uni.request({
-						url:BASE_URL+ '/user/register',
+					this.request({
+						url: '/user/register',
 						method: 'POST',
-						data: this.form,
-						success: res => {
-							if (res.statusCode === 200) {
-								uni.navigateTo({
-									url: '/pages/login/login'
-								});
-								uni.showToast({
-									title: '注册成功'
-								});
-							}
+						data: this.form
+					}).then(res => {
+						if (res.statusCode === 200) {
+							uni.navigateTo({
+								url: '/pages/login/login'
+							});
+							uni.showToast({
+								title: '注册成功'
+							});
 						}
 					});
 				})

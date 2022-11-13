@@ -6,8 +6,11 @@
   },
   "setting": {
     "urlCheck": false,
-    "minified": true,
+    "es6": false,
     "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "bigPackageSizeSupport": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -15,7 +18,7 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.27.0",
+  "libVersion": "2.27.2",
   "appid": "wxac5eb96a7bf6a6b4",
   "projectname": "worktime",
   "condition": {},

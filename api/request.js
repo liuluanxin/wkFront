@@ -1,5 +1,3 @@
-// const BASE_URL = 'https://api.imooc-blog.lgdsunday.club/api';
-
 import URL from './url.js';
 const BASE_URL = URL.getUrl();
 

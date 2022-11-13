@@ -47,12 +47,35 @@ export default {
 		};
 	},
 	onShow() {
-		const BASE_URL = 'http://10.0.193.60:8080';
-		const res = uni.request({
-			url: BASE_URL + '/user-worktime',
+		const res = this.request({
+			url: '/user-worktime',
 			method: 'GET',
-			data: { year: new Date().getFullYear(), month: new Date().getMonth() + 1 },
-			success: res => {
+			data: { year: new Date().getFullYear(), month: new Date().getMonth() + 1 }
+		}).then(res => {
+			if (res.statusCode == '200') {
+				const all = res.data.list;
+				const myrange = [];
+				const time = [];
+				all.map(res => {
+					myrange.push({ date: getDate(res.targetDate).fullDate, info: res.time + '小时' });
+					time.push({ info: res.time });
+				});
+				setTimeout(() => {
+					this.info.selected = myrange;
+					this.allTime = time.reduce((sum, current) => sum + current.info, 0);
+				}, 200);
+				this.allData = all;
+				this.show = true;
+			}
+		});
+	},
+	methods: {
+		monthSwitch(e) {
+			const res = this.request({
+				url: '/user-worktime',
+				method: 'GET',
+				data: { year: e.year, month: e.month }
+			}).then(res => {
 				if (res.statusCode == '200') {
 					const all = res.data.list;
 					const myrange = [];
@@ -67,33 +90,6 @@ export default {
 					}, 200);
 					this.allData = all;
 					this.show = true;
-				}
-			}
-		});
-	},
-	methods: {
-		monthSwitch(e) {
-			const BASE_URL = 'http://10.0.193.60:8080';
-			const res = uni.request({
-				url: BASE_URL + '/user-worktime',
-				method: 'GET',
-				data: { year: e.year, month: e.month },
-				success: res => {
-					if (res.statusCode == '200') {
-						const all = res.data.list;
-						const myrange = [];
-						const time = [];
-						all.map(res => {
-							myrange.push({ date: getDate(res.targetDate).fullDate, info: res.time + '小时' });
-							time.push({ info: res.time });
-						});
-						setTimeout(() => {
-							this.info.selected = myrange;
-							this.allTime = time.reduce((sum, current) => sum + current.info, 0);
-						}, 200);
-						this.allData = all;
-						this.show = true;
-					}
 				}
 			});
 		}

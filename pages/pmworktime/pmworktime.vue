@@ -20,7 +20,9 @@
 				<uni-td align="center"><button type="primary" style="line-height: initial;" @tap="editchange(item)">修改</button></uni-td>
 			</uni-tr>
 		</uni-table>
-		<view v-if="timeId.length !== 0"><button type="warn" style="margin-left: 30px;margin-right: 30px;margin-top: 10px; margin-bottom: 10px;" @click="deleteData(timeId)">删除</button></view>
+		<view v-if="timeId.length !== 0">
+			<button type="warn" style="margin-left: 30px;margin-right: 30px;margin-top: 10px; margin-bottom: 10px;" @click="deleteData(timeId)">删除</button>
+		</view>
 		<view class="uni-pagination-box"><uni-pagination show-icon :page-size="pageSize" :current="pageCurrent" :total="total" @change="change" /></view>
 	</view>
 </template>
@@ -39,15 +41,13 @@ export default {
 	methods: {
 		getProjectId() {
 			this.selectedIndexs = [];
-			const BASE_URL = 'http://10.0.193.60:8080';
-			const res = uni.request({
-				url: BASE_URL + '/user-worktime',
+			const res = this.request({
+				url: '/user-worktime',
 				method: 'GET',
-				data: { year: new Date().getFullYear(), month: new Date().getMonth() + 1 },
-				success: res => {
-					if (res.statusCode == '200') {
-						this.tableData = res.data.list;
-					}
+				data: { year: new Date().getFullYear(), month: new Date().getMonth() + 1 }
+			}).then(res => {
+				if (res.statusCode == '200') {
+					this.tableData = res.data.list;
 				}
 			});
 		},
@@ -61,20 +61,18 @@ export default {
 				title: '确定删除当前的加班时间吗？',
 				success: function(res) {
 					if (res.confirm) {
-						const BASE_URL = 'http://10.0.193.60:8080';
-						uni.request({
-							url: BASE_URL + '/user-worktime',
+						this.request({
+							url: '/user-worktime',
 							method: 'DELETE',
-							data: e,
-							success: res => {
-								if (res.statusCode == '200') {
-									uni.redirectTo({
-										url: '/pages/pmworktime/pmworktime'
-									});
-									uni.showToast({
-										title: '删除成功'
-									});
-								}
+							data: e
+						}).then(res => {
+							if (res.statusCode == '200') {
+								uni.redirectTo({
+									url: '/pages/pmworktime/pmworktime'
+								});
+								uni.showToast({
+									title: '删除成功'
+								});
 							}
 						});
 					} else if (res.cancel) {

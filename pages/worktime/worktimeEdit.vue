@@ -56,50 +56,50 @@ export default {
 		// 财务ID从DB中取得
 		onShow() {
 			uni.$emit('');
-			const BASE_URL = 'http://10.0.193.60:8080';
-			const res = uni.request({
-				url: BASE_URL + '/project',
-				method: 'GET',
-				success: res => {
-					if (res.statusCode == '200') {
-						const all = res.data.list;
-						const myrange = [];
-						all.map(res => {
-							myrange.push({ value: res.id, text: res.projectName });
-						});
-						this.range = myrange;
-						// 第一个财务ID显示
+			const res = this.request({
+				url: '/project',
+				method: 'GET'
+			}).then(res => {
+				if (res.statusCode == '200') {
+					const all = res.data.list;
+					const myrange = [];
+					all.map(res => {
+						myrange.push({ value: res.id, text: res.projectName });
+					});
+					this.range = myrange;
+					// 第一个财务ID显示
+					if (this.range == '') {
+						this.form.projectId = null;
+					} else {
 						this.form.projectId = this.range[0].value;
-						this.show = true;
 					}
+					this.show = true;
 				}
 			});
 		},
 		// 申请
 		apply() {
-			const BASE_URL = 'http://10.0.193.60:8080';
 			this.$refs.form.validate().then(res => {
-				uni.request({
-					url: BASE_URL + '/user-extra-worktime',
+				this.request({
+					url: '/user-extra-worktime',
 					method: 'POST',
 					data: {
 						...res,
 						statusApplyBool: this.statusApplyBool
-					},
-					success: res => {
-						if (res.statusCode == '200') {
-							uni.redirectTo({
-								url: '/pages/calendar/calendar'
-							});
-							uni.showToast({
-								title: '申请成功'
-							});
-						} else {
-							uni.showModal({
-								title: '当前日期和财务ID的申请记录已经存在，请确认日期和财务ID的内容是否正确。',
-								showCancel: false
-							});
-						}
+					}
+				}).then(res => {
+					if (res.statusCode == '200') {
+						uni.redirectTo({
+							url: '/pages/calendar/calendar'
+						});
+						uni.showToast({
+							title: '申请成功'
+						});
+					} else {
+						uni.showModal({
+							title: '当前日期和财务ID的申请记录已经存在，请确认日期和财务ID的内容是否正确。',
+							showCancel: false
+						});
 					}
 				});
 			});

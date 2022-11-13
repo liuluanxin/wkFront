@@ -1,4 +1,4 @@
-const BASE_URL = `http://localhost:8080`
+const BASE_URL = `http://localhost:80`
 
 export const request = (options) => {  // {url: '', method: '', data: {}}
 	return new Promise((resolve, reject) => {
@@ -8,13 +8,13 @@ export const request = (options) => {  // {url: '', method: '', data: {}}
 			header: {token: uni.getStorageSync('user') ? uni.getStorageSync('user').token : ''},
 			data: options.data || {},
 			success: (res) => {
-				const data = res.data
-				if (data.code === '401') {  // 401表示无权限
+				const data = res
+				if (data.statusCode === 401) {  // 401表示无权限
 					uni.navigateTo({
 						url: '/pages/login/login'
 					})
 					return
-				} else if(data.code !== '200') {
+				} else if(data.statusCode !== 200) {
 					uni.showToast({
 						icon: 'error',
 						title: '操作错误'

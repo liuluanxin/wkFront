@@ -56,20 +56,18 @@ export default {
 		this.form.statusApplyBool = list.statusApply;
 		// 加班理由
 		this.form.comment = list.comment;
-		const BASE_URL = 'http://10.0.193.60:8080';
-		const res = uni.request({
-			url: BASE_URL + '/project/' + this.form.projectId,
-			method: 'GET',
-			success: res => {
-				if (res.statusCode == '200') {
-					const all = res.data;
-					const myrange = [];
-					myrange.push({ value: all.id, text: all.projectName });
-					this.range = myrange;
-					//财务ID显示
-					this.form.projectId = this.range[0].value;
-					this.show = true;
-				}
+		const res = this.request({
+			url: '/project/' + this.form.projectId,
+			method: 'GET'
+		}).then(res => {
+			if (res.statusCode == '200') {
+				const all = res.data;
+				const myrange = [];
+				myrange.push({ value: all.id, text: all.projectName });
+				this.range = myrange;
+				//财务ID显示
+				this.form.projectId = this.range[0].value;
+				this.show = true;
 			}
 		});
 	},
@@ -84,25 +82,23 @@ export default {
 		},
 		// 申请
 		apply() {
-			const BASE_URL = 'http://10.0.193.60:8080';
 			this.$refs.form.validate().then(res => {
-				uni.request({
-					url: BASE_URL + '/user-extra-worktime/' + this.id,
+				this.request({
+					url: '/user-extra-worktime/' + this.id,
 					method: 'PUT',
 					data: {
 						...res,
 						id: this.id,
 						statusApplyBool: this.form.statusApplyBool
-					},
-					success: res => {
-						if (res.statusCode == '200') {
-							uni.redirectTo({
-								url: '/pages/worktime/worktimeList'
-							});
-							uni.showToast({
-								title: '申请成功'
-							});
-						}
+					}
+				}).then(res => {
+					if (res.statusCode == '200') {
+						uni.redirectTo({
+							url: '/pages/worktime/worktimeList'
+						});
+						uni.showToast({
+							title: '申请成功'
+						});
 					}
 				});
 			});

@@ -12,17 +12,11 @@ function getImagePassword() {
 }
 
 function getUrl() {
-  return 'http://'+url+':8000/dchat';
+  return 'http://'+url+':8000';
 }
-
-function getWebsokcetUrl() {
-  return url+':8000/dchat/';
-}
-
 
 module.exports = {
 	getUrl : getUrl,
-	getWebsokcetUrl:getWebsokcetUrl,
 	getImageUrl:getImageUrl,
 	getImagePassword:getImagePassword
 }
