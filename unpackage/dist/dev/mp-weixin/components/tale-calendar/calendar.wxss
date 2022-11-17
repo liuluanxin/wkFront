@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.content.data-v-3ad956fa {
+  width: 750rpx;
+  margin: 0 auto;
+}
+.flex.data-v-3ad956fa {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 20rpx 20rpx 0 0;
+  background-color: #73a9c5;
+}
+.flex-wrap.data-v-3ad956fa {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.flex-column.data-v-3ad956fa {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3rpx 0;
+}
+.flex-item.data-v-3ad956fa {
+  flex: 1;
+}
+.bold.data-v-3ad956fa {
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.year-month.data-v-3ad956fa {
+  width: 400rpx;
+  margin: 0 auto 20rpx;
+  padding-top: 20rpx;
+}
+.week.data-v-3ad956fa {
+  margin: 20rpx 20rpx 40rpx;
+  width: 60rpx;
+  text-align: center;
+  color: #fff;
+}
+.day-box.data-v-3ad956fa {
+  width: 100rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f2e0;
+}
+.day.data-v-3ad956fa {
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+}
+.day-text.data-v-3ad956fa {
+  font-size: 22rpx;
+}
+.day-dot.data-v-3ad956fa {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #058ace;
+}
+.day-dot.dot-red.data-v-3ad956fa {
+  background: #b0002d;
+}
+.today.data-v-3ad956fa, .selected.data-v-3ad956fa {
+  background: #b0002d;
+  color: #ffffff;
+}
+.notCurrentMonth.data-v-3ad956fa {
+  visibility: hidden;
+  color: #999999;
+  pointer-events: none;
+  background: none;
+}
+

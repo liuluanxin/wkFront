@@ -1,0 +1,90 @@
+
+.basement {
+	background-color: #eee;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.logo {
+	height: 200rpx;
+	width: 200rpx;
+	margin-top: 200rpx;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50rpx;
+}
+.text-area {
+	display: flex;
+	justify-content: center;
+}
+.item {
+	box-sizing: border-box;
+	height: 200rpx;
+	width: 100%;
+	margin-bottom: 10px;
+	background: #ccc;
+}
+.title {
+	font-size: 36rpx;
+	color: #8f8f94;
+}
+.top {
+	padding: 10rpx 20rpx;
+	margin-bottom: 20rpx;
+	background-color: #fff;
+	border-radius:0 0 40rpx 40rpx;
+}
+.name_nav {
+	color:#999
+}
+.name {
+	color: #000000;
+	margin: 0 30rpx;
+}
+.name_r {
+	display: inline-block;
+	width: 80rpx;
+	height: 80rpx;
+	color: #fff;
+	font-size: 36rpx;
+	text-align: center;
+	line-height: 80rpx;
+	background-color: #33a0d8;
+	border-radius: 50%;
+}
+.data_msg {
+	background-color: #fff;
+	display: flex;
+	color: #000000;
+	font-size: 30rpx;
+	justify-content: space-around;
+}
+.kaoqing_msg {
+	display: flex;
+	color: #999999;
+	text-align: center;
+	justify-content: space-around;
+}
+.record,.foot {
+	background-color: #fff;
+	padding: 10rpx 20rpx;
+}
+.record_title {
+	font-size: 32rpx;
+	margin-bottom: 8rpx;
+}
+.red_icon {
+	margin: 4rpx;
+	color: #f11;
+}
+.calendar {
+	background-color: #fff;
+}
+.foot{
+	color:#888
+}
+
+

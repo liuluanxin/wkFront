@@ -5,7 +5,8 @@
     "pages/worktime/worktimeEditDetail",
     "pages/login/login",
     "pages/register/register",
-    "pages/worktime/worktimeEdit"
+    "pages/worktime/worktimeEdit",
+    "pages/record/record"
   ],
   "subPackages": [],
   "window": {
@@ -35,14 +36,21 @@
       },
       {
         "pagePath": "pages/calendar/calendar",
-        "iconPath": "static/img/tabbar/home.png",
-        "selectedIconPath": "static/img/tabbar/homeactive.png",
+        "iconPath": "static/img/search.png",
+        "selectedIconPath": "static/img/search_check.png",
         "text": "记录查询"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "iconPath": "static/img/search.png",
+        "selectedIconPath": "static/img/search_check.png",
+        "text": "记录"
       }
     ]
   },
   "uniStatistics": {
     "enable": true
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }
