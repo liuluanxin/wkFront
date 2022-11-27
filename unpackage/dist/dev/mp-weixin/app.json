@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/worktime/new_file",
     "pages/worktime/worktimeList",
     "pages/calendar/calendar",
     "pages/worktime/worktimeEditDetail",
@@ -22,6 +23,12 @@
     "color": "#8F8F94",
     "selectedColor": "#f33e54",
     "list": [
+      {
+        "pagePath": "pages/worktime/new_file",
+        "iconPath": "static/img/tabbar/me.png",
+        "selectedIconPath": "static/img/tabbar/meactive.png",
+        "text": "个人"
+      },
       {
         "pagePath": "pages/worktime/worktimeList",
         "iconPath": "static/img/tabbar/me.png",
@@ -51,6 +58,5 @@
   "uniStatistics": {
     "enable": true
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

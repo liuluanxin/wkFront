@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<view>
-			<!-- <view class="flex year-month">
+			<view class="flex year-month">
 				<view @click="prevMonth">上一月</view>
 				<view>
 					<picker mode="date" fields="month" @change="monthChange">
@@ -9,7 +9,7 @@
 					</picker>
 				</view>
 				<view @click="nextMonth">下一月</view>
-			</view> -->
+			</view>
 			<view class="flex">
 				<view class="flex-item flex" v-for="item in weeks" >
 					<text class="week">{{item}}</text>
@@ -242,7 +242,6 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: row;
-		border-radius: 20upx 20upx 0 0;
 		background-color: #73a9c5;
 	}
 	.flex-wrap {
@@ -270,9 +269,11 @@
 		font-size: 28rpx;
 	}
 	.year-month {
-		width: 400rpx;
-		margin: 0 auto 20rpx;
 		padding-top: 20rpx;
+		border-radius: 40upx 40upx 0 0;
+		justify-content: center;
+		gap: 100upx;
+		
 	}
 	.week {
 		margin: 20rpx 20rpx 40rpx;

@@ -1,50 +1,81 @@
 
-.basement {
+.basement.data-v-398371b3 {
+	padding: 3px;
 	background-color: #eee;
 }
-.content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.logo {
-	height: 200rpx;
-	width: 200rpx;
-	margin-top: 200rpx;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50rpx;
-}
-.text-area {
-	display: flex;
-	justify-content: center;
-}
-.item {
-	box-sizing: border-box;
-	height: 200rpx;
+.top.data-v-398371b3 {
 	width: 100%;
 	margin-bottom: 10px;
-	background: #ccc;
-}
-.title {
-	font-size: 36rpx;
-	color: #8f8f94;
-}
-.top {
-	padding: 10rpx 20rpx;
-	margin-bottom: 20rpx;
 	background-color: #fff;
-	border-radius:0 0 40rpx 40rpx;
 }
-.name_nav {
-	color:#999
+.list.data-v-398371b3 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 200rpx;
+	color: #fff;
+	padding: 0 40rpx;
+	margin: 10px 0;
+	border-radius: 8px;
+	box-sizing: border-box;
+	box-shadow: 0 5px 4px #ccc;
+	background-color: #0088ce;
 }
-.name {
+.list_right.data-v-398371b3 {
+}
+.msg.data-v-398371b3 {
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+}
+.list_center.data-v-398371b3,
+.list_left.data-v-398371b3 {
+	text-align: center;
+}
+.list_center_title.data-v-398371b3,
+.list_center_num.data-v-398371b3 {
+	font-size: 34rpx;
+}
+.time.data-v-398371b3 {
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	        transform: translate(-50%);
+}
+.history_serch.data-v-398371b3 {
+	/* position: absolute; */
+	/* top: 0; */
+	display: flex;
+	justify-content: flex-end;
+	right: 3px;
+	color: #009ddf;
+}
+.center.data-v-398371b3 {
+	background-color: #fff;
+}
+.center_title.data-v-398371b3 {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 20rpx;
+	text-align: center;
+	font-size: 34rpx;
+}
+.red_icon.data-v-398371b3 {
+	margin: 4rpx;
+	color: #f11;
+}
+.calendar_charts.data-v-398371b3 {
+	height: 300px;
+}
+.name_nav.data-v-398371b3 {
+	color: #999;
+}
+.name.data-v-398371b3 {
 	color: #000000;
 	margin: 0 30rpx;
 }
-.name_r {
+.name_r.data-v-398371b3 {
 	display: inline-block;
 	width: 80rpx;
 	height: 80rpx;
@@ -54,37 +85,13 @@
 	line-height: 80rpx;
 	background-color: #33a0d8;
 	border-radius: 50%;
+	margin-top: 24rpx;
 }
-.data_msg {
+.data_msg.data-v-398371b3 {
 	background-color: #fff;
 	display: flex;
 	color: #000000;
 	font-size: 30rpx;
 	justify-content: space-around;
 }
-.kaoqing_msg {
-	display: flex;
-	color: #999999;
-	text-align: center;
-	justify-content: space-around;
-}
-.record,.foot {
-	background-color: #fff;
-	padding: 10rpx 20rpx;
-}
-.record_title {
-	font-size: 32rpx;
-	margin-bottom: 8rpx;
-}
-.red_icon {
-	margin: 4rpx;
-	color: #f11;
-}
-.calendar {
-	background-color: #fff;
-}
-.foot{
-	color:#888
-}
-
 

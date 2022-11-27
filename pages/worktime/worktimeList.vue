@@ -20,10 +20,12 @@
 				<uni-td align="center"><button type="primary" style="line-height: initial;" @tap="editchange(item)">修改</button></uni-td>
 			</uni-tr>
 		</uni-table>
+
 		<view v-if="timeId.length !== 0">
 			<button type="warn" style="margin-left: 30px;margin-right: 30px;margin-top: 10px; margin-bottom: 10px;" @click="deleteData(timeId)">删除</button>
 		</view>
 		<view class="uni-pagination-box"><uni-pagination show-icon :page-size="pageSize" :current="pageCurrent" :total="total" @change="change" /></view>
+		<uni-fab ref="fab" :pattern="pattern" :content="content" :horizontal="horizontal" :vertical="vertical" :direction="direction" @trigger="trigger" @fabClick="fabClick" />
 	</view>
 </template>
 
@@ -54,6 +56,12 @@ export default {
 		editchange(e) {
 			uni.navigateTo({
 				url: '/pages/worktime/worktimeEditDetail?data=' + JSON.stringify(e)
+			});
+		},
+		fabClick() {
+			uni.showToast({
+				title: '点击了悬浮按钮',
+				icon: 'none'
 			});
 		},
 		deleteData(e) {

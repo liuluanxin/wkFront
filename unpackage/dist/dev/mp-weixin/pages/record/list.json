@@ -1,8 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "uni-icons": "/components/uni-icons/uni-icons",
-    "me-scroll": "/components/mescroll-uni/mescroll-uni",
-    "tale-calendar": "/components/tale-calendar/calendar"
+    "w-picker": "/components/w-picker/w-picker",
+    "reserve-date": "/components/reserve-date/reserve-date"
   }
 }
