@@ -1,11 +1,6 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/worktime/new_file",
-			"style": {
-				"navigationBarTitleText": "个人加班时间一览"
-			}
-		},{
 			"path": "pages/worktime/worktimeList",
 			"style": {
 				"navigationBarTitleText": "个人加班时间一览"
@@ -35,11 +30,6 @@
 			"style": {
 				"navigationBarTitleText": "申请"
 			}
-		}, {
-			"path": "pages/record/record",
-			"style": {
-				"navigationBarTitleText": "记录"
-			}
 		}
 	],
 	"globalStyle": {
@@ -55,11 +45,6 @@
 		"color": "#8F8F94",
 		"selectedColor": "#f33e54",
 		"list": [{
-				"pagePath": "pages/worktime/new_file",
-				"iconPath": "static/img/tabbar/me.png",
-				"selectedIconPath": "static/img/tabbar/meactive.png",
-				"text": "个人"
-			},{
 				"pagePath": "pages/worktime/worktimeList",
 				"iconPath": "static/img/tabbar/me.png",
 				"selectedIconPath": "static/img/tabbar/meactive.png",
@@ -72,14 +57,9 @@
 				"text": "申请"
 			}, {
 				"pagePath": "pages/calendar/calendar",
-				"iconPath": "static/img/search.png",
-				"selectedIconPath": "static/img/search_check.png",
+				"iconPath": "static/img/tabbar/home.png",
+				"selectedIconPath": "static/img/tabbar/homeactive.png",
 				"text": "记录查询"
-			}, {
-				"pagePath": "pages/record/record",
-				"iconPath": "static/img/search.png",
-				"selectedIconPath": "static/img/search_check.png",
-				"text": "记录"
 			}
 
 		]

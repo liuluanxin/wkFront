@@ -1,13 +1,11 @@
 {
   "pages": [
-    "pages/worktime/new_file",
     "pages/worktime/worktimeList",
     "pages/calendar/calendar",
     "pages/worktime/worktimeEditDetail",
     "pages/login/login",
     "pages/register/register",
-    "pages/worktime/worktimeEdit",
-    "pages/record/record"
+    "pages/worktime/worktimeEdit"
   ],
   "subPackages": [],
   "window": {
@@ -24,12 +22,6 @@
     "selectedColor": "#f33e54",
     "list": [
       {
-        "pagePath": "pages/worktime/new_file",
-        "iconPath": "static/img/tabbar/me.png",
-        "selectedIconPath": "static/img/tabbar/meactive.png",
-        "text": "个人"
-      },
-      {
         "pagePath": "pages/worktime/worktimeList",
         "iconPath": "static/img/tabbar/me.png",
         "selectedIconPath": "static/img/tabbar/meactive.png",
@@ -43,15 +35,9 @@
       },
       {
         "pagePath": "pages/calendar/calendar",
-        "iconPath": "static/img/search.png",
-        "selectedIconPath": "static/img/search_check.png",
+        "iconPath": "static/img/tabbar/home.png",
+        "selectedIconPath": "static/img/tabbar/homeactive.png",
         "text": "记录查询"
-      },
-      {
-        "pagePath": "pages/record/record",
-        "iconPath": "static/img/search.png",
-        "selectedIconPath": "static/img/search_check.png",
-        "text": "记录"
       }
     ]
   },
