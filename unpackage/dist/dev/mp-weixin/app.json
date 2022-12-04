@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/demo/demo",
     "pages/worktime/worktimeList",
+    "pages/me/me",
     "pages/calendar/calendar",
     "pages/worktime/worktimeEditDetail",
     "pages/login/login",
@@ -22,22 +24,22 @@
     "selectedColor": "#f33e54",
     "list": [
       {
-        "pagePath": "pages/worktime/worktimeList",
+        "pagePath": "pages/demo/demo",
         "iconPath": "static/img/tabbar/me.png",
         "selectedIconPath": "static/img/tabbar/meactive.png",
-        "text": "个人"
+        "text": "查询"
       },
       {
-        "pagePath": "pages/worktime/worktimeEdit",
-        "iconPath": "static/img/tabbar/add.png",
-        "selectedIconPath": "static/img/tabbar/addactive.png",
-        "text": "申请"
-      },
-      {
-        "pagePath": "pages/calendar/calendar",
+        "pagePath": "pages/me/me",
         "iconPath": "static/img/tabbar/home.png",
         "selectedIconPath": "static/img/tabbar/homeactive.png",
-        "text": "记录查询"
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/worktime/worktimeList",
+        "iconPath": "static/img/tabbar/home.png",
+        "selectedIconPath": "static/img/tabbar/homeactive.png",
+        "text": "个人加班"
       }
     ]
   },

@@ -6,38 +6,34 @@
 			</view>
 		</scroll-view>
 		<swiper id="tabContent" :current="tabIndex" @change="tabChange">
-			<swiper-item v-for="(item, index) in barContentList" :key="item.id">
-				<view v-for="(listItem, listIndex) in item.data">
-					<text>{{ listItem.title }}</text>
-					<text>{{ listItem.statusLabal }}</text>
-					<text>{{ listItem.content }}</text>
-				</view>
+			<swiper-item v-for="(item, index) in barContentList" :key="index" style="height: 100%;width: 100%;">
+				<view v-show="tabIndex === 0"><calendar :i="index" :type="current"></calendar></view>
 			</swiper-item>
 		</swiper>
 	</view>
 </template>
 
 <script>
+import calendar from 'pages/calendar/calendar.vue';
 export default {
+	components: {
+		calendar
+	},
 	data() {
 		return {
 			tabIndex: 0,
 			barNameList: [
 				{
-					name: '待审核',
+					name: '加班时间记录',
 					id: '0'
 				},
 				{
-					name: '审核中',
+					name: 'PM审核记录',
 					id: '1'
 				},
 				{
-					name: '已审核',
+					name: 'DM审核记录',
 					id: '2'
-				},
-				{
-					name: '全部',
-					id: '3'
 				}
 			],
 			barContentList: []
@@ -56,6 +52,12 @@ export default {
 				});
 				this.getList(0); // 默认初始获取第一个选项对应的数据
 			}, 350);
+		},
+		fabClick() {
+			uni.showToast({
+				title: '点击了悬浮按钮',
+				icon: 'none'
+			});
 		},
 		// 获取列表数据
 		getList(index) {
@@ -97,10 +99,10 @@ export default {
 }
 .tabName {
 	text-align: center;
-	width: 25%;
+	width: 33%;
 	display: inline-block;
-	height: 80rpx;
-	line-height: 80rpx;
+	height: 60rpx;
+	line-height: 60rpx;
 	white-space: nowrap;
 }
 .tabName_text {
@@ -113,6 +115,8 @@ export default {
 	color: #ffffff;
 }
 #tabContent {
+	position: absolute;
 	width: 100%;
+	height: 93%;
 }
 </style>

@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "w-picker": "/components/w-picker/w-picker",
-    "reserve-date": "/components/reserve-date/reserve-date"
-  }
-}

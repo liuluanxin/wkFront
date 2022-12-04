@@ -1,8 +1,14 @@
 <template>
 	<view class="calendar-content">
-		<view class="center_title">当前月加班时间日历</view>
-		<view class="">当月加班时间合计：{{ allTime }}小时</view>
-		<view><uni-calendar :selected="info.selected" @monthSwitch="monthSwitch" /></view>
+		<view class="list">
+			<view style="flex: 1; display: flex;justify-content: space-around;">
+				<view>当月累计加班时间：{{ allTime }}小时</view>
+			</view>
+		</view>
+		<view><uni-fab ref="fab" horizontal="right" vertical="bottom" @fabClick="fabClick" /></view>
+		<view style="margin: 30upx; border-radius: 20upx; box-shadow: 0 3rpx 32rpx 0rpx #ccc;">
+			<uni-calendar :selected="info.selected" @monthSwitch="monthSwitch" @change="onchange" />
+		</view>
 	</view>
 </template>
 
@@ -46,7 +52,7 @@ export default {
 			allTime: ''
 		};
 	},
-	onShow() {
+	onReady() {
 		const res = this.request({
 			url: '/user-worktime',
 			method: 'GET',
@@ -92,6 +98,24 @@ export default {
 					this.show = true;
 				}
 			});
+		},
+		fabClick() {
+			uni.navigateTo({
+				url: '/pages/worktime/worktimeEditDetail'
+			});
+		},
+		onchange(e) {
+			const time = this.allData.find(res => e.extraInfo.date === res.targetDate);
+			if (time) {
+				uni.navigateTo({
+					url: '/pages/worktime/worktimeEditDetail?data=' + JSON.stringify(time)
+				});
+			} else {
+				uni.showModal({
+					content: '当天没有填写加班时间记录，请申请完加班时间后在点击',
+					showCancel: false
+				});
+			}
 		}
 	}
 };
@@ -104,5 +128,21 @@ export default {
 	margin-bottom: 20upx;
 	text-align: center;
 	font-size: 34upx;
+	background-color: #e6e6e6;
+}
+.list {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 55upx;
+	color: #fff;
+	padding: 0 40upx;
+	margin: 10px 0;
+	border-radius: 8px;
+	box-sizing: border-box;
+	box-shadow: 0 10px 8px #ccc;
+	background-color: #0088ce;
 }
 </style>

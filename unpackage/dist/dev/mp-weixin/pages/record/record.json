@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "记录",
-  "usingComponents": {
-    "qs-tab": "/components/QS-tabs/QS-tabs",
-    "index-list": "/pages/record/list",
-    "index-list-vacation": "/pages/record/list_vacation"
-  }
-}

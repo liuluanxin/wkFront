@@ -155,7 +155,7 @@ $uni-primary: #f2f3f5 !default;
 	flex-direction: column;
 	align-items: center;
 	width: 100rpx;
-	height: 140rpx;
+	height: 120rpx;
 }
 
 .uni-calendar-item__weeks-box-circle {

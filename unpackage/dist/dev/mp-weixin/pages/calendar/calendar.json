@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "记录查询",
   "usingComponents": {
+    "uni-fab": "/uni_modules/uni-fab/components/uni-fab/uni-fab",
     "uni-calendar": "/uni_modules/uni-calendar/components/uni-calendar/uni-calendar"
   }
 }

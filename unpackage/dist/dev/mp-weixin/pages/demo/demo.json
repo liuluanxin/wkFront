@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "滑动",
-  "usingComponents": {}
+  "navigationBarTitleText": "加班时间查询",
+  "usingComponents": {
+    "calendar": "/pages/calendar/calendar"
+  }
 }
